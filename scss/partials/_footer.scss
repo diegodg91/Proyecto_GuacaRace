@@ -1,0 +1,26 @@
+.footer {
+  // background: linear-gradient(0deg, $color-dark, $color-secundario);
+
+  background-color: $black;
+  color: $color-primario;
+
+  min-height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  div a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: $color-primario;
+    text-align: center;
+  }
+  div a:hover {
+    color: $color-secundario;
+  }
+  .social-icons img {
+    width: 2rem;
+    max-height: 1.4rem;
+  }
+}

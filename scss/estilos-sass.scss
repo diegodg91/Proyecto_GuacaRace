@@ -1,0 +1,116 @@
+@import "partials/variables";
+@import "partials/globals";
+@import "partials/media-queries";
+@import "partials/hero";
+@import "partials/footer";
+
+.body__style {
+  // background-color: $black;
+  color: $white;
+  font-family: "Open Sans", sans-serif;
+}
+.bg-container {
+  background-color: #d4d4d4;
+}
+.bg-form {
+  background-color: $color-secundario;
+}
+.item-bg-transparent {
+  background-color: $color-secundario;
+}
+.bg-brand {
+  background-color: $color-primario;
+}
+.fc-brand {
+  color: $color-primario;
+}
+.menu__style {
+  background-color: $color-primario;
+}
+.menu__style-items a {
+  color: $white;
+}
+.title-l {
+  font-size: $title-l;
+  font-weight: bolder;
+  text-shadow: $shadow;
+  text-transform: uppercase;
+}
+.title-xl {
+  font-size: $title-xl;
+  font-weight: bolder;
+  text-shadow: $shadow;
+  text-transform: uppercase;
+}
+
+.resena {
+  background-color: $color-primario;
+  color: $black;
+}
+
+.inscripcion {
+  min-height: 540px;
+  background-image: url("../img/inscripciones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.inscripcion__form {
+  background-color: $gray;
+  color: $color-secundario;
+}
+
+.kit {
+  background-color: $white;
+  color: $color-secundario;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.img-kit > img {
+  width: 20rem;
+  height: auto;
+}
+
+.sponsors-img img {
+  width: 10rem;
+  height: auto;
+}
+
+.sponsors {
+  background-color: $color-primario;
+}
+.video {
+  background-color: $black;
+}
+.recorridos {
+  background-color: $gray;
+  color: $color-secundario;
+}
+
+.distancias__item {
+  border: 2px solid #ff4c29;
+  border-radius: 4px;
+  max-width: 10rem;
+}
+
+/*contacto*/
+.contacto {
+  min-height: 40rem;
+  background-color: $gray;
+  color: $color-secundario;
+}
+
+/*fin contacto*/
+
+.recorrido__map img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  background-color: $gray;
+  color: $color-secundario;
+}

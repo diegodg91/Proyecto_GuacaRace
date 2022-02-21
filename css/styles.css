@@ -1,0 +1,137 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px !important; }
+
+body {
+  margin: 0px !important;
+  padding: 0px !important; }
+
+.hero {
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/run1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 375px) {
+    .hero {
+      padding: 2rem 0;
+      min-height: 100vh; } }
+  .hero div p {
+    letter-spacing: 1.4rem;
+    text-shadow: 2px 1px 2px #121314; }
+    @media (max-width: 375px) {
+      .hero div p {
+        letter-spacing: 0; } }
+
+.footer {
+  background-color: #02090e;
+  color: #ff4c29;
+  min-height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer div a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ff4c29;
+    text-align: center; }
+  .footer div a:hover {
+    color: #2c394b; }
+  .footer .social-icons img {
+    width: 2rem;
+    max-height: 1.4rem; }
+
+.body__style {
+  color: #f5f5f5;
+  font-family: "Open Sans", sans-serif; }
+
+.bg-container {
+  background-color: #d4d4d4; }
+
+.bg-form {
+  background-color: #2c394b; }
+
+.item-bg-transparent {
+  background-color: #2c394b; }
+
+.bg-brand {
+  background-color: #ff4c29; }
+
+.fc-brand {
+  color: #ff4c29; }
+
+.menu__style {
+  background-color: #ff4c29; }
+
+.menu__style-items a {
+  color: #f5f5f5; }
+
+.title-l {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-shadow: #121314;
+  text-transform: uppercase; }
+
+.title-xl {
+  font-size: 5rem;
+  font-weight: bolder;
+  text-shadow: #121314;
+  text-transform: uppercase; }
+
+.resena {
+  background-color: #ff4c29;
+  color: #02090e; }
+
+.inscripcion {
+  min-height: 540px;
+  background-image: url("../img/inscripciones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; }
+
+.inscripcion__form {
+  background-color: #e9eaeb;
+  color: #2c394b; }
+
+.kit {
+  background-color: #f5f5f5;
+  color: #2c394b; }
+
+.img-kit > img {
+  width: 20rem;
+  height: auto; }
+
+.sponsors-img img {
+  width: 10rem;
+  height: auto; }
+
+.sponsors {
+  background-color: #ff4c29; }
+
+.video {
+  background-color: #02090e; }
+
+.recorridos {
+  background-color: #e9eaeb;
+  color: #2c394b; }
+
+.distancias__item {
+  border: 2px solid #ff4c29;
+  border-radius: 4px;
+  max-width: 10rem; }
+
+/*contacto*/
+.contacto {
+  min-height: 40rem;
+  background-color: #e9eaeb;
+  color: #2c394b; }
+
+/*fin contacto*/
+.recorrido__map img {
+  width: 100%;
+  height: auto; }
+
+.info {
+  background-color: #e9eaeb;
+  color: #2c394b; }
