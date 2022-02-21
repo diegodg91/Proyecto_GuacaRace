@@ -3,11 +3,12 @@
 
   background-color: $black;
   color: $color-primario;
-
   min-height: auto;
+
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 
   div a {
     font-size: 0.9rem;

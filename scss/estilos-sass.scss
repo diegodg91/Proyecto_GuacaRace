@@ -67,6 +67,15 @@
   // display: flex;
   // justify-content: center;
   // align-items: center;
+  .icon-list {
+    color: $color-primario;
+  }
+  .icon-list::before {
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/list-icon-gr.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .img-kit > img {
