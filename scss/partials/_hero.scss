@@ -2,18 +2,26 @@
   max-width: 100%;
   min-height: 100vh;
   @include mobile {
-    padding: 2rem 0;
+    padding: 2rem 0rem;
     min-height: 100vh;
   }
   background-image: url("../img/run1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
-  div p {
+  div span {
     letter-spacing: 1.4rem;
     @include mobile {
-      letter-spacing: 0;
+      letter-spacing: 0px;
+      font-size: 0.9rem;
     }
-    text-shadow: 2px 1px 2px $shadow;
+    @include mobile-M {
+      font-size: 0.85rem;
+      letter-spacing: 0.2rem;
+    }
+    @include tablet-S {
+      letter-spacing: 0.8rem;
+    }
+    text-shadow: 1px 1px 2px $shadow;
   }
 }

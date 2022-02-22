@@ -21,15 +21,36 @@
 .bg-brand {
   background-color: $color-primario;
 }
+.bg-gray {
+  background-color: $gray;
+}
+.bg-light {
+  background-color: $white;
+}
 .fc-brand {
   color: $color-primario;
 }
+
 .menu__style {
   background-color: $color-primario;
+  ul li {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+
+    @include mobile-M {
+      letter-spacing: 0.1rem;
+    }
+  }
+  .nav-item > a {
+    color: $black;
+  }
+  .nav-item > a:hover {
+    opacity: 0.5;
+  }
 }
-.menu__style-items a {
-  color: $white;
-}
+
 .title-l {
   font-size: $title-l;
   font-weight: bolder;
@@ -95,7 +116,7 @@
   background-color: $black;
 }
 .recorridos {
-  background-color: $gray;
+  background-color: $white;
   color: $color-secundario;
 
   .icon-list {
