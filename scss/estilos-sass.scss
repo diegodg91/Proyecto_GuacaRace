@@ -97,6 +97,21 @@
 .recorridos {
   background-color: $gray;
   color: $color-secundario;
+
+  .icon-list {
+    color: $color-primario;
+  }
+  .icon-list::before {
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/list-icon-gr.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.recorridos__eco {
+  background-color: $gray;
+  color: $color-secundario;
 }
 
 .distancias__item {
@@ -113,11 +128,6 @@
 }
 
 /*fin contacto*/
-
-.recorrido__map img {
-  width: 100%;
-  height: auto;
-}
 
 .info {
   background-color: $gray;

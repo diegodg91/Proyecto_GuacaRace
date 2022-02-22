@@ -123,6 +123,17 @@ body {
 .recorridos {
   background-color: #e9eaeb;
   color: #2c394b; }
+  .recorridos .icon-list {
+    color: #ff4c29; }
+  .recorridos .icon-list::before {
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/list-icon-gr.svg");
+    background-repeat: no-repeat; }
+
+.recorridos__eco {
+  background-color: #e9eaeb;
+  color: #2c394b; }
 
 .distancias__item {
   border: 2px solid #ff4c29;
@@ -136,10 +147,6 @@ body {
   color: #2c394b; }
 
 /*fin contacto*/
-.recorrido__map img {
-  width: 100%;
-  height: auto; }
-
 .info {
   background-color: #e9eaeb;
   color: #2c394b; }
