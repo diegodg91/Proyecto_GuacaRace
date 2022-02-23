@@ -74,6 +74,7 @@
   background-image: url("../img/inscripciones.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
 }
 
@@ -169,7 +170,11 @@
     width: 50%;
     height: auto;
     @include tablet {
-      width: 70%;
+      width: 100%;
+      text-align: center;
+    }
+    @include tablet-S {
+      width: 80%;
       text-align: center;
     }
     @include mobile {

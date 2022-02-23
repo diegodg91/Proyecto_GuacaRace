@@ -11,7 +11,8 @@ body {
   min-height: 100vh;
   background-image: url("../img/run1.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   @media (max-width: 320px) {
     .hero {
       padding: 2rem 0rem;
@@ -112,6 +113,7 @@ body {
   background-image: url("../img/inscripciones.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%; }
 
 .inscripcion__form {
@@ -186,7 +188,11 @@ body {
     height: auto; }
     @media (max-width: 768px) {
       .recorridos .recorridos__maps-img > img {
-        width: 70%;
+        width: 100%;
+        text-align: center; } }
+    @media (max-width: 575px) {
+      .recorridos .recorridos__maps-img > img {
+        width: 80%;
         text-align: center; } }
     @media (max-width: 320px) {
       .recorridos .recorridos__maps-img > img {
