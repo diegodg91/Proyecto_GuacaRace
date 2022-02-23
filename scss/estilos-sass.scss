@@ -104,16 +104,34 @@
   height: auto;
 }
 
-.sponsors-img img {
-  width: 10rem;
-  height: auto;
-}
-
 .sponsors {
   background-color: $color-primario;
+  display: flex;
+  justify-content: center;
+  @include mobile-M {
+    justify-content: space-around;
+  }
+
+  .sponsors-img img {
+    width: 10rem;
+    height: auto;
+    @include mobile {
+      width: 3.4rem;
+      text-align: center;
+    }
+    @include mobile-M {
+      width: 3.8rem;
+      text-align: center;
+    }
+  }
 }
+
 .video {
   background-color: $black;
+
+  .video__youtube {
+    min-height: 30rem;
+  }
 }
 .recorridos {
   background-color: $white;
@@ -127,6 +145,36 @@
     padding: 0 2rem 1rem 0;
     background-image: url("../img/list-icon-gr.svg");
     background-repeat: no-repeat;
+  }
+
+  .recorridos__maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    @include tablet {
+      align-items: center;
+    }
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  .recorridos__maps-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .recorridos__maps-img > img {
+    width: 50%;
+    height: auto;
+    @include tablet {
+      width: 70%;
+      text-align: center;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 
