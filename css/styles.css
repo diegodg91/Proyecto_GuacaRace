@@ -77,6 +77,27 @@ body {
 .fc-brand {
   color: #ff4c29; }
 
+.fc-brand-2 {
+  color: #2c394b; }
+
+.gr-button {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px transparent;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer; }
+
+.gr-button-primary {
+  background-color: #ff4c29; }
+
+.gr-button-secondary {
+  background-color: #2c394b; }
+
 .menu__style {
   background-color: #ff4c29; }
   .menu__style ul li {
@@ -95,6 +116,7 @@ body {
 .title-l {
   font-size: 3rem;
   font-weight: bolder;
+  font-style: oblique;
   text-shadow: #121314;
   text-transform: uppercase; }
 
@@ -211,7 +233,10 @@ body {
 .contacto {
   min-height: 40rem;
   background-color: #e9eaeb;
-  color: #2c394b; }
+  color: #2c394b;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*fin contacto*/
 .info {

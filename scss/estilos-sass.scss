@@ -30,6 +30,28 @@
 .fc-brand {
   color: $color-primario;
 }
+.fc-brand-2 {
+  color: $color-secundario;
+}
+
+.gr-button {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px transparent;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.gr-button-primary {
+  background-color: $color-primario;
+}
+.gr-button-secondary {
+  background-color: $color-secundario;
+}
 
 .menu__style {
   background-color: $color-primario;
@@ -54,6 +76,7 @@
 .title-l {
   font-size: $title-l;
   font-weight: bolder;
+  font-style: oblique;
   text-shadow: $shadow;
   text-transform: uppercase;
 }
@@ -199,6 +222,9 @@
   min-height: 40rem;
   background-color: $gray;
   color: $color-secundario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*fin contacto*/
