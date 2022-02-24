@@ -35,22 +35,38 @@
 }
 
 .gr-button {
-  max-width: auto;
+  max-width: 14rem;
   height: auto;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
   border: 1px transparent;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
 }
+
 .gr-button-primary {
   background-color: $color-primario;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    color: $black;
+  }
 }
 .gr-button-secondary {
   background-color: $color-secundario;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    color: $black;
+  }
 }
 
 .menu__style {
@@ -60,6 +76,7 @@
   ul li {
     font-size: 0.8rem;
     font-weight: 500;
+    text-transform: uppercase;
     letter-spacing: 0.2rem;
     padding: 1rem;
 
@@ -85,10 +102,18 @@
   }
 }
 
+.title-m {
+  font-size: $title-m;
+  font-weight: 800;
+  font-style: italic;
+  text-shadow: $shadow;
+  text-transform: uppercase;
+}
+
 .title-l {
   font-size: $title-l;
-  font-weight: bolder;
-  font-style: oblique;
+  font-weight: 800;
+  font-style: italic;
   text-shadow: $shadow;
   text-transform: uppercase;
 }
@@ -116,6 +141,14 @@
 .inscripcion__form {
   background-color: $gray;
   color: $color-secundario;
+}
+
+.inscripcion__reglamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  background-color: $color-primario;
 }
 
 .kit {
