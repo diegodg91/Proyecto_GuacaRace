@@ -12,6 +12,7 @@
 
   div span {
     letter-spacing: 6px;
+    color: $white;
     @include mobile {
       letter-spacing: 0px;
       font-size: 0.9rem;

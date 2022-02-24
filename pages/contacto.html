@@ -19,54 +19,62 @@
   <title>Contactanos | Guacarace</title>
 </head>
 
-<body class="body__style">
-  <div class="container-fluid bg-container">
+<body>
+  <div class="container-fluid bg-container body__style">
     <!-- INICIO HEADER -->
-    <header>
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light menu__style">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="/img/gr-logo.svg" alt="" width="84" height="60" class="d-inline-block align-text-top" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-md-start justify-content-lg-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="/pages/inscripciones.html">Inscripciones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="/pages/recorridos.html">Recorridos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="/pages/info.html">info</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-uppercase" href="/pages/contacto.html">contacto</a>
-                </li>
-              </ul>
-            </div>
+    <header class="menu__style">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class=" navbar-brand" href="#">
+            <img src="/img/gr-logo.svg" alt="logo-guacarace" width="84" height="60"
+              class="d-inline-block align-text-top" />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse menu__style-nav" id="navbarNav">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./inscripciones.html">Inscripciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recorridos.html">Recorridos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./info.html">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
     </header>
     <!-- FIN HEADER -->
 
     <!-- Seccion contacto -->
-    <div class="row align-items-center bg-gray">
-      <div class="col-12">
-        <h1 class="title-l fc-brand-2 pt-4 pb-4 text-center">contacto</h1>
-      </div>
-    </div>
+
 
     <section class="contacto">
-      <div class="row container d-flex align-items-center justify-content-center">
+      <div class="row align-items-center bg-gray">
+        <div class="col-12">
+          <h1 class="title-l fc-brand-2 pt-4 pb-4 text-center">contacto</h1>
+        </div>
+      </div>
+
+      <div class="row container contacto__form">
         <div class="col-12 col-md-6">
           <div>
             <div class="mb-3">
@@ -84,22 +92,22 @@
           </div>
 
           <div class="align-items-center mt-4">
-            <button type="submit" class="gr-button gr-button-secondary text-capitalize">
+            <button type="submit" class="gr-button gr-button-secondary text-capitalize mt-2">
               restablecer
             </button>
-            <button type="submit" class="gr-button gr-button-primary text-capitalize">
+            <button type="submit" class="gr-button gr-button-primary text-capitalize mt-2">
               enviar
             </button>
           </div>
         </div>
 
-        <div class="col-12 col-md-6 d-flex justify-content-center flex-column align-items-center">
+        <div class="col-12 col-md-6 d-flex justify-content-center flex-column align-items-md-end align-items-sm-start">
           <div class="mt-5 fs-4 fw-bold">
             <p>+54***********</p>
             <p>Av. Ferre 610</p>
           </div>
 
-          <div class="border-top border-2 social-icons pt-5 mt-5 mb-5">
+          <div class="border-top border-2 social-icons pt-5 mt-5 mb-5 align-items-center">
             <p class="fs-4 fw-bold mb-4">Seguinos en:</p>
             <a href="#"><img src="../img/facebook.svg" alt="facebook" /></a>
             <a href="#"><img src="../img/instagram.svg" alt="instagram" /></a>
