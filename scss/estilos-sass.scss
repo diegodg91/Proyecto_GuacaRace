@@ -285,3 +285,33 @@
   background-color: $gray;
   color: $color-secundario;
 }
+
+.form__pre{
+  /* background-image: url(../img/ccc2021.jpg); */
+  background-color: $color-primario;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  
+ 
+
+  .form__pre-container {
+    width: 80%;
+    /* min-height: 100vh; */
+    min-height: 40rem;
+    margin-top: 20rem;
+    background-color: $white;
+    padding: 2rem;
+    color: $color-secundario;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+     @include mobile{
+        width: 100%;
+        padding: 0px;
+    }
+
+  }
+
+}
