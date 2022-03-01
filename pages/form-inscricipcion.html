@@ -69,61 +69,72 @@
 
         <section class="form__pre pt-5 pb-5">
             <!-- contenedor de formulario -->
-            <div class="row mx-auto form__pre-container">
+            <div class="row mx-auto form__pre-container shadow-sm p-3 mb-5 bg-body rounded">
                 <div class="col">
                     <div class="row">
-                        <div class="col-12 ps-3">
-                            <h3 class="mt-4">Formulario de pre-inscripcion</h3>
-                            <p class="text-justify">completa tus datos</p>
+                        <div class="col-12">
+                            <h3 class="mt-4 text-uppercase fw-bold">Formulario de pre-inscripcion</h3>
+                            <p class="text-muted text-justify">
+                                Luego de completar tus datos,
+                                te enviaremos a la plataforma donde realizaras el pago</p>
                         </div>
                     </div>
                     <!-- formulario -->
-                    <form class="row g-3 needs-validation mt-4">
+                    <form class="row g-3 mt-4 needs-validation" novalidate>
 
                         <div class="col-md-6">
-                            <label for="validationCustomName" class="form-label">Nombre completo</label>
-                            <input type="text" id="validationCustomName" class="form-control mt-2"
-                                placeholder="Nombre del corredor" required>
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input id="nombre" name="nombre" type="text" class="form-control mt-2" required>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
                         <div class="col-md-6">
-                            <label for="inputSurName" class="form-label">Apellidos</label>
-                            <input type="text" id="inputSurName" class="form-control mt-2"
-                                placeholder="Apellido del corredor" aria-label="First name" required>
+                            <label for="apellido" class="form-label">Apellidos</label>
+                            <input id="nombre" name="apellido" type="text" class="form-control mt-2" required>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <label for="FormControlEmail" class="form-label mt-4">Email</label>
-                            <input type="email" class="form-control mt-2" id="FormControlEmail"
-                                placeholder="name@example.com" required>
+                            <label for="email" class="form-label mt-4">Email</label>
+                            <input id="email" name="email" type="email" class="form-control mt-2" required>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label mt-4">Telefono</label>
-                            <input type="text" class="form-control mt-2" id="exampleFormControlInput1"
-                                placeholder="+54**********" required>
+                            <label for="telefono" class="form-label mt-4">Telefono</label>
+                            <input id="telefono" name="telefono" type="text" class="form-control mt-2" required>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <label for="exampleFormControlDocumento" class="form-label mt-4">DNI</label>
-                            <input type="text" class="form-control mt-2" id="exampleFormControlDocumento"
-                                placeholder="24******" required>
+                            <label for="documento" class="form-label mt-4">DNI</label>
+                            <input id="documento" name="documento" type="text" class="form-control mt-2" required>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <label for="exampleFormControlDocumento" class="form-label mt-4">Fecha de nacimiento</label>
-                            <input type="date" class="form-control mt-2" id="exampleFormControlDocumento"
-                                placeholder="10/01/1990" required>
+                            <label for="nacimiento" class="form-label mt-4">Fecha de nacimiento</label>
+                            <input id="nacimiento" name="nacimiento" type="date" class="form-control mt-2" required>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
 
                         <div class="col-sm-12 col-md-4">
-                            <label for="inputState" class="form-label mt-4">Distancia</label>
-                            <select id="inputState" class="form-select mt-2" required>
-                                <option selected>21Km</option>
+                            <label for="distancia" class="form-label mt-4">Distancia</label>
+                            <select id="distancia" name="distancia" class="form-select mt-2" required>
+                                <option selected disabled value="">Seleccione distancia</option>
+                                <option>21Km</option>
                                 <option>15Km</option>
                                 <option>7Km</option>
                             </select>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
 
                         <div class="col-sm-12 col-md-4">
-                            <label for="inputState" class="form-label mt-4">Categoria</label>
-                            <select id="inputState" class="form-select mt-2" required>
-                                <option selected>...</option>
+                            <label for="categoria" class="form-label mt-4">Categoria</label>
+                            <select id="categoria" name="categoria" class="form-select mt-2" required>
+                                <option selected disabled value="">Categoria</option>
                                 <option>Mas 60</option>
                                 <option>50-59</option>
                                 <option>40-49</option>
@@ -131,31 +142,37 @@
                                 <option>19-29</option>
                                 <option>Hasta 18</option>
                             </select>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
 
                         <div class="col-sm-12 col-md-4">
                             <label for="inputState" class="form-label mt-4">Talle remera</label>
                             <select id="inputState" class="form-select mt-2" required>
-                                <option selected>...</option>
+                                <option selected disabled value="">Talle</option>
                                 <option>XXL</option>
                                 <option>XL</option>
                                 <option>L</option>
                                 <option>M</option>
                                 <option>S</option>
                             </select>
+                            <div class="valid-feedback">Completo</div>
+                            <div class="invalid-feedback">Complete los datos</div>
                         </div>
 
-                        <div class="col-12-auto">
-                            <div class="form-check pt-4 mx-auto align-items-center">
-                                <input class="form-check-input mt-2" type="checkbox" id="gridCheck">
+                        <div class="col-12">
+                            <div class="form-check mt-4">
+                                <input class="form-check-input mt-2" type="checkbox" id="gridCheck" required>
                                 <label class="form-check-label mt-1 ms-2" for="gridCheck">
                                     Acepto los <a href="#">Terminos y condiciones</a>
                                 </label>
+                                <div class="valid-feedback">Completo</div>
+                                <div class="invalid-feedback">Incompleto</div>
                             </div>
                         </div>
-                        <div class="col-12 mt-4 ">
+                        <div class="col-12 mt-5">
                             <button type="reset" class="btn btn-secondary">Restablecer</button>
-                            <button type="submit" class="btn btn-primary ms-2">Enviar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
 
                         </div>
 
@@ -194,11 +211,28 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
 </body>
 
 </html>
