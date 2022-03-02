@@ -6,6 +6,33 @@ body {
   margin: 0px !important;
   padding: 0px !important; }
 
+.menu__style {
+  width: 100%;
+  background-color: #ff4c29; }
+  .menu__style ul li {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 1rem; }
+    @media (max-width: 425px) {
+      .menu__style ul li {
+        letter-spacing: 0.1rem; } }
+  .menu__style .nav-item > a {
+    color: #02090e; }
+  .menu__style .nav-item > a:hover {
+    opacity: 0.5; }
+
+.menu__style-nav {
+  display: flex;
+  justify-content: flex-end; }
+  @media (max-width: 768px) {
+    .menu__style-nav {
+      justify-content: flex-start; } }
+  @media (max-width: 425px) {
+    .menu__style-nav {
+      justify-content: flex-start; } }
+
 .hero {
   max-width: 100%;
   min-height: 100vh;
@@ -32,6 +59,167 @@ body {
     @media (max-width: 575px) {
       .hero div span {
         letter-spacing: 1px; } }
+
+.resena {
+  background-color: #ff4c29;
+  color: #02090e; }
+
+.sponsors {
+  background-color: #ff4c29;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 425px) {
+    .sponsors {
+      justify-content: space-around; } }
+  .sponsors .sponsors-img img {
+    width: 10rem;
+    height: auto; }
+    @media (max-width: 320px) {
+      .sponsors .sponsors-img img {
+        width: 3.4rem;
+        text-align: center; } }
+    @media (max-width: 425px) {
+      .sponsors .sponsors-img img {
+        width: 3.8rem;
+        text-align: center; } }
+
+.video {
+  background-color: #02090e; }
+  .video .video__youtube {
+    min-height: 30rem; }
+
+.inscripcion {
+  min-height: 540px;
+  background-image: url("../img/inscripciones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
+.inscripcion__form {
+  background-color: #e9eaeb;
+  color: #2c394b; }
+
+.inscripcion__reglamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  background-color: #ff4c29; }
+
+.kit {
+  background-color: #f5f5f5;
+  color: #2c394b; }
+  .kit .icon-list {
+    color: #ff4c29; }
+  .kit .icon-list::before {
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/list-icon-gr.svg");
+    background-repeat: no-repeat; }
+
+.img-kit > img {
+  width: 20rem;
+  height: auto; }
+
+.form__pre {
+  /* background-image: url(../img/ccc2021.jpg); */
+  background-color: #ff4c29;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
+  .form__pre a {
+    text-decoration: none; }
+  .form__pre .form__pre-container {
+    width: 80%;
+    /* min-height: 100vh; */
+    min-height: 40rem;
+    margin-top: 20rem;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    color: #2c394b;
+    border: 1px solid transparent;
+    border-radius: 4px; }
+    @media (max-width: 320px) {
+      .form__pre .form__pre-container {
+        width: 100%;
+        padding: 0px; } }
+  .form__pre .form__pre-link::before {
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/MobileBackArrowMajor.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top; }
+  .form__pre .form__pre-link:hover {
+    opacity: 0.5; }
+
+.recorridos {
+  background-color: #f5f5f5;
+  color: #2c394b; }
+  .recorridos .icon-list {
+    color: #ff4c29; }
+  .recorridos .icon-list::before {
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/list-icon-gr.svg");
+    background-repeat: no-repeat; }
+  .recorridos .recorridos__maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    @media (max-width: 768px) {
+      .recorridos .recorridos__maps {
+        align-items: center; } }
+    @media (max-width: 320px) {
+      .recorridos .recorridos__maps {
+        align-items: center; } }
+  .recorridos .recorridos__maps-img {
+    display: flex;
+    justify-content: center; }
+  .recorridos .recorridos__maps-img > img {
+    width: 50%;
+    height: auto; }
+    @media (max-width: 768px) {
+      .recorridos .recorridos__maps-img > img {
+        width: 100%;
+        text-align: center; } }
+    @media (max-width: 575px) {
+      .recorridos .recorridos__maps-img > img {
+        width: 80%;
+        text-align: center; } }
+    @media (max-width: 320px) {
+      .recorridos .recorridos__maps-img > img {
+        width: 100%; } }
+
+.recorridos__eco {
+  background-color: #e9eaeb;
+  color: #2c394b; }
+
+.distancias__item {
+  border: 2px solid #ff4c29;
+  border-radius: 4px;
+  max-width: 10rem; }
+
+/*contacto*/
+.contacto {
+  min-height: 40rem;
+  background-color: #e9eaeb;
+  color: #2c394b; }
+  .contacto .contacto__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end; }
+  .contacto .contacto__form-location {
+    align-self: center; }
+
+/*fin contacto*/
+.info {
+  background-color: #e9eaeb;
+  color: #2c394b; }
 
 .footer {
   background-color: #02090e;
@@ -110,33 +298,6 @@ body {
   .gr-button-secondary:active {
     color: #02090e; }
 
-.menu__style {
-  width: 100%;
-  background-color: #ff4c29; }
-  .menu__style ul li {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    padding: 1rem; }
-    @media (max-width: 425px) {
-      .menu__style ul li {
-        letter-spacing: 0.1rem; } }
-  .menu__style .nav-item > a {
-    color: #02090e; }
-  .menu__style .nav-item > a:hover {
-    opacity: 0.5; }
-
-.menu__style-nav {
-  display: flex;
-  justify-content: flex-end; }
-  @media (max-width: 768px) {
-    .menu__style-nav {
-      justify-content: flex-start; } }
-  @media (max-width: 425px) {
-    .menu__style-nav {
-      justify-content: flex-start; } }
-
 .title-m {
   font-size: 2.2rem;
   font-weight: 800;
@@ -156,164 +317,3 @@ body {
   font-weight: bolder;
   text-shadow: #121314;
   text-transform: uppercase; }
-
-.resena {
-  background-color: #ff4c29;
-  color: #02090e; }
-
-.inscripcion {
-  min-height: 540px;
-  background-image: url("../img/inscripciones.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%; }
-
-.inscripcion__form {
-  background-color: #e9eaeb;
-  color: #2c394b; }
-
-.inscripcion__reglamento {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 10rem;
-  background-color: #ff4c29; }
-
-.kit {
-  background-color: #f5f5f5;
-  color: #2c394b; }
-  .kit .icon-list {
-    color: #ff4c29; }
-  .kit .icon-list::before {
-    content: "";
-    padding: 0 2rem 1rem 0;
-    background-image: url("../img/list-icon-gr.svg");
-    background-repeat: no-repeat; }
-
-.img-kit > img {
-  width: 20rem;
-  height: auto; }
-
-.sponsors {
-  background-color: #ff4c29;
-  display: flex;
-  justify-content: center; }
-  @media (max-width: 425px) {
-    .sponsors {
-      justify-content: space-around; } }
-  .sponsors .sponsors-img img {
-    width: 10rem;
-    height: auto; }
-    @media (max-width: 320px) {
-      .sponsors .sponsors-img img {
-        width: 3.4rem;
-        text-align: center; } }
-    @media (max-width: 425px) {
-      .sponsors .sponsors-img img {
-        width: 3.8rem;
-        text-align: center; } }
-
-.video {
-  background-color: #02090e; }
-  .video .video__youtube {
-    min-height: 30rem; }
-
-.recorridos {
-  background-color: #f5f5f5;
-  color: #2c394b; }
-  .recorridos .icon-list {
-    color: #ff4c29; }
-  .recorridos .icon-list::before {
-    content: "";
-    padding: 0 2rem 1rem 0;
-    background-image: url("../img/list-icon-gr.svg");
-    background-repeat: no-repeat; }
-  .recorridos .recorridos__maps {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end; }
-    @media (max-width: 768px) {
-      .recorridos .recorridos__maps {
-        align-items: center; } }
-    @media (max-width: 320px) {
-      .recorridos .recorridos__maps {
-        align-items: center; } }
-  .recorridos .recorridos__maps-img {
-    display: flex;
-    justify-content: center; }
-  .recorridos .recorridos__maps-img > img {
-    width: 50%;
-    height: auto; }
-    @media (max-width: 768px) {
-      .recorridos .recorridos__maps-img > img {
-        width: 100%;
-        text-align: center; } }
-    @media (max-width: 575px) {
-      .recorridos .recorridos__maps-img > img {
-        width: 80%;
-        text-align: center; } }
-    @media (max-width: 320px) {
-      .recorridos .recorridos__maps-img > img {
-        width: 100%; } }
-
-.recorridos__eco {
-  background-color: #e9eaeb;
-  color: #2c394b; }
-
-.distancias__item {
-  border: 2px solid #ff4c29;
-  border-radius: 4px;
-  max-width: 10rem; }
-
-/*contacto*/
-.contacto {
-  min-height: 40rem;
-  background-color: #e9eaeb;
-  color: #2c394b; }
-  .contacto .contacto__form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end; }
-  .contacto .contacto__form-location {
-    align-self: center; }
-
-/*fin contacto*/
-.info {
-  background-color: #e9eaeb;
-  color: #2c394b; }
-
-.form__pre {
-  /* background-image: url(../img/ccc2021.jpg); */
-  background-color: #ff4c29;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh; }
-  .form__pre a {
-    text-decoration: none; }
-  .form__pre .form__pre-container {
-    width: 80%;
-    /* min-height: 100vh; */
-    min-height: 40rem;
-    margin-top: 20rem;
-    background-color: #f5f5f5;
-    padding: 2rem;
-    color: #2c394b;
-    border: 1px solid transparent;
-    border-radius: 4px; }
-    @media (max-width: 320px) {
-      .form__pre .form__pre-container {
-        width: 100%;
-        padding: 0px; } }
-  .form__pre .form__pre-link::before {
-    content: "";
-    padding: 0 2rem 1rem 0;
-    background-image: url("../img/MobileBackArrowMajor.svg");
-    background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: top; }
-  .form__pre .form__pre-link:hover {
-    opacity: 0.5; }

@@ -1,0 +1,33 @@
+.menu__style {
+    width: 100%;
+    background-color: $color-primario;
+  
+    ul li {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      padding: 1rem;
+  
+      @include mobile-M {
+        letter-spacing: 0.1rem;
+      }
+    }
+    .nav-item > a {
+      color: $black;
+    }
+    .nav-item > a:hover {
+      opacity: 0.5;
+    }
+  }
+  .menu__style-nav {
+    display: flex;
+    justify-content: flex-end;
+    @include tablet {
+      justify-content: flex-start;
+    }
+    @include mobile-M {
+      justify-content: flex-start;
+    }
+  }
+  

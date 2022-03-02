@@ -1,0 +1,43 @@
+.inscripcion {
+    min-height: 540px;
+    background-image: url("../img/inscripciones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  
+  .inscripcion__form {
+    background-color: $gray;
+    color: $color-secundario;
+  }
+  
+  .inscripcion__reglamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    background-color: $color-primario;
+  }
+  
+  .kit {
+    background-color: $white;
+    color: $color-secundario;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .icon-list {
+      color: $color-primario;
+    }
+    .icon-list::before {
+      content: "";
+      padding: 0 2rem 1rem 0;
+      background-image: url("../img/list-icon-gr.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  
+  .img-kit > img {
+    width: 20rem;
+    height: auto;
+  }

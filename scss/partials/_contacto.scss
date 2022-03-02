@@ -1,0 +1,19 @@
+
+/*contacto*/
+.contacto {
+    min-height: 40rem;
+    background-color: $gray;
+    color: $color-secundario;
+  
+    .contacto__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: flex-end;
+    }
+    .contacto__form-location {
+      align-self: center;
+    }
+  }
+  
+  /*fin contacto*/

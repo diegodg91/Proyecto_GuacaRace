@@ -1,0 +1,59 @@
+.recorridos {
+    background-color: $white;
+    color: $color-secundario;
+  
+    .icon-list {
+      color: $color-primario;
+    }
+    .icon-list::before {
+      content: "";
+      padding: 0 2rem 1rem 0;
+      background-image: url("../img/list-icon-gr.svg");
+      background-repeat: no-repeat;
+    }
+  
+    .recorridos__maps {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      @include tablet {
+        align-items: center;
+      }
+      @include mobile {
+        align-items: center;
+      }
+    }
+  
+    .recorridos__maps-img {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .recorridos__maps-img > img {
+      width: 50%;
+      height: auto;
+      @include tablet {
+        width: 100%;
+        text-align: center;
+      }
+      @include tablet-S {
+        width: 80%;
+        text-align: center;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  
+  .recorridos__eco {
+    background-color: $gray;
+    color: $color-secundario;
+  }
+  
+  .distancias__item {
+    border: 2px solid #ff4c29;
+    border-radius: 4px;
+    max-width: 10rem;
+  }
