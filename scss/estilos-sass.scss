@@ -294,7 +294,9 @@
   background-size: cover;
   min-height: 100vh;
   
- 
+  a {
+    text-decoration: none;
+  }
 
   .form__pre-container {
     width: 80%;
@@ -312,6 +314,17 @@
         padding: 0px;
     }
 
+  }
+  .form__pre-link::before{
+    content: "";
+    padding: 0 2rem 1rem 0;
+    background-image: url("../img/MobileBackArrowMajor.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position:top
+  }
+  .form__pre-link:hover{
+    opacity: 0.5;
   }
 
 }
