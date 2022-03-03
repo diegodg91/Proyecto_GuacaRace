@@ -8,6 +8,7 @@
   <meta name="description"
     content="Guacarace, una carrera de trail-running pensada para los runners mas aventureros!" />
   <meta name="keywords" content="RUNNING, TRAIL, CARRERA, AVENTURA" />
+  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,8 +67,8 @@
     <!-- FIN HEADER -->
 
     <!-- INICIO HERO -->
-    <section>
-      <div class="row">
+    <main class="container-fluid">
+      <div class="row align-items-center">
         <div class="col-md-12 d-flex justify-content-center align-items-center hero">
           <div class="fs-5 fw-regular text-uppercase text-center pt-1">
             <span class="fs-2 d-block fw-bold">superate</span>
@@ -80,7 +81,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
+
+
 
     <!-- FIN HERO -->
     <section id="lacarrera" class="resena">
@@ -125,17 +128,20 @@
     <!-- fin video -->
 
     <!-- inicia sponsor -->
-    <div class="row align-items-center sponsors text-center pt-4">
-      <div class="col-auto col-md-4 col-lg-4 p-2 sponsors-img">
-        <img src="/img/gatorade.png" alt="gatorade-logo" />
+    <section class="container-fluid">
+      <div class="row align-items-center sponsors text-center pt-4">
+        <div class="col-auto col-md-4 col-lg-4 p-2 sponsors-img">
+          <img class="img-fluid" src="/img/gatorade.png" alt="gatorade-logo" />
+        </div>
+        <div class="col-auto col-md-4 col-lg-4 p-2 sponsors-img">
+          <img class="img-fluid" src="/img/salomon.png" alt="salomon-logo" />
+        </div>
+        <div class="col-auto col-md-4 col-lg-4 p-2 sponsors-img">
+          <img class="img-fluid" src="/img/walmart.png" alt="walmart-logo" />
+        </div>
       </div>
-      <div class="col-auto col-md-4 col-lg-4 p-2 sponsors-img">
-        <img src="/img/salomon.png" alt="salomon-logo" />
-      </div>
-      <div class="col-auto col-md-4 col-lg-4 p-2 sponsors-img">
-        <img src="/img/walmart.png" alt="walmart-logo" />
-      </div>
-    </div>
+    </section>
+
     <!-- Fin sponsor -->
 
     <footer class="footer">

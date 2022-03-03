@@ -1,11 +1,12 @@
 * {
   font-family: "Open Sans", sans-serif;
-  margin: 0px !important; }
+  /*   margin: 0px !important;
+  box-sizing: border-box !important; */ }
 
-body {
+/* body {
   margin: 0px !important;
-  padding: 0px !important; }
-
+  padding: 0px !important; 
+} */
 .menu__style {
   width: 100%;
   background-color: #ff4c29; }
@@ -34,7 +35,6 @@ body {
       justify-content: flex-start; } }
 
 .hero {
-  max-width: 100%;
   min-height: 100vh;
   background-image: url("../img/run1.jpg");
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ body {
         text-align: center; } }
 
 .video {
-  background-color: #02090e; }
+  background-color: #ff4c29; }
   .video .video__youtube {
     min-height: 30rem; }
 
@@ -141,9 +141,8 @@ body {
     width: 80%;
     /* min-height: 100vh; */
     min-height: 40rem;
-    margin-top: 20rem;
     background-color: #f5f5f5;
-    padding: 2rem;
+    padding: 1rem;
     color: #2c394b;
     border: 1px solid transparent;
     border-radius: 4px; }
