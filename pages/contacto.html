@@ -71,49 +71,65 @@
 
 
     <section class="contacto">
-      <div class="row align-items-center bg-gray">
-        <div class="col-12">
-          <h1 class="title-l fc-brand-2 pt-4 pb-4 text-center">contacto</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 mt-5">
+            <h1 class="title-l pb-2">contacto</h1>
+            <span class="d-block pt-2 text-justify fw-bold">Tel: +54******</span>
+            <span class="d-block pt-2 text-start fw-bold">Direccion: Av.Ferre 900</span>
+            <hr>
+          </div>
         </div>
+
+
+        <div class="row mx-auto">
+          <!-- content contact -->
+          <div class="col-sm-12 col-md-6 pt-2 pb-5">
+            <form class="row g-3 pt-5 pe-5 pb-5 rounded needs-validation" novalidate>
+
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input id="nombre" name="nombre" type="text" class="form-control" required>
+                <div class="valid-feedback">Completo</div>
+                <div class="invalid-feedback">Complete los datos</div>
+              </div>
+
+              <div class="col-sm-12 col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" class="form-control" required>
+                <div class="valid-feedback">Completo</div>
+                <div class="invalid-feedback">Email incorrecto</div>
+              </div>
+
+              <div class="col-sm-12 col-md-12">
+                <label for="Textarea" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="Textarea" rows="6" required></textarea>
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Escriba un mensaje</div>
+              </div>
+
+              <div class="col-12 mt-5">
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <button type="reset" class="btn btn-secondary text-uppercase font-monospace">Restablecer</button>
+
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-dark text-uppercase font-monospace">Enviar</button>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </form>
+          </div>
+          <!-- content contact -->
+
+        </div>
+
       </div>
 
-      <div class="row container contacto__form">
-        <div class="col-12 col-md-6">
-          <div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="user@guacarace.com" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </div>
-
-          <div class="align-items-center mt-4">
-            <input class="btn btn-success font-monospace text-uppercase me-1" type="submit" value="enviar">
-            <input class="btn btn-secondary font-monospace text-uppercase ms-1" type="reset" value="reset">
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 d-flex justify-content-center flex-column align-items-md-end align-items-sm-start">
-          <div class="mt-5 fs-4 fw-bold">
-            <p>+54***********</p>
-            <p>Av. Ferre 610</p>
-          </div>
-
-          <div class="border-top border-2 social-icons pt-5 mt-5 mb-5 align-items-center">
-            <p class="fs-4 fw-bold mb-4">Seguinos en:</p>
-            <a href="#"><img src="../img/facebook.svg" alt="facebook" /></a>
-            <a href="#"><img src="../img/instagram.svg" alt="instagram" /></a>
-            <a href="#"><img src="../img/youtube.svg" alt="youtube" /></a>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- Seccion contacto -->
 
@@ -142,6 +158,28 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
+  <script>
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
