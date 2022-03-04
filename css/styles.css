@@ -39,26 +39,28 @@
   background-image: url("../img/run1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  color: #f5f5f5;
+  /* div span {
+    letter-spacing: 6px;
+    color: $white;
+    @include mobile {
+      letter-spacing: 0px;
+      font-size: 0.9rem;
+    }
+    @include mobile-M {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+    @include tablet-S {
+      letter-spacing: 1px;
+    }
+    text-shadow: 1px 1px 2px $shadow;
+  } */ }
   @media (max-width: 320px) {
     .hero {
       padding: 2rem 0rem;
       min-height: 100vh; } }
-  .hero div span {
-    letter-spacing: 6px;
-    color: #f5f5f5;
-    text-shadow: 1px 1px 2px #121314; }
-    @media (max-width: 320px) {
-      .hero div span {
-        letter-spacing: 0px;
-        font-size: 0.9rem; } }
-    @media (max-width: 425px) {
-      .hero div span {
-        font-size: 0.85rem;
-        letter-spacing: 1px; } }
-    @media (max-width: 575px) {
-      .hero div span {
-        letter-spacing: 1px; } }
 
 .resena {
   background-color: #ff4c29;
@@ -199,6 +201,14 @@
       .recorridos .recorridos__maps-img > img {
         width: 100%; } }
 
+.recorridos__background {
+  min-height: 420px;
+  background-image: url("../img/trail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
 .recorridos__eco {
   background-color: #e9eaeb;
   color: #2c394b; }
@@ -226,6 +236,14 @@
 .info {
   background-color: #e9eaeb;
   color: #2c394b; }
+
+.info__background {
+  min-height: 420px;
+  background-image: url("../img/recorridos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
 
 .footer {
   background-color: #02090e;
@@ -275,6 +293,9 @@
 .fc-brand-2 {
   color: #2c394b; }
 
+.fc-light {
+  color: #f5f5f5; }
+
 .gr-button {
   max-width: 14rem;
   height: auto;
@@ -305,21 +326,22 @@
     color: #02090e; }
 
 .title-m {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 800;
   font-style: italic;
-  text-shadow: #121314;
+  text-shadow: 4px 2px 4px #242525;
   text-transform: uppercase; }
 
 .title-l {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 800;
   font-style: italic;
-  text-shadow: #121314;
-  text-transform: uppercase; }
+  text-shadow: #242525;
+  text-transform: uppercase;
+  text-shadow: 4px 2px 4px #242525; }
 
 .title-xl {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bolder;
-  text-shadow: #121314;
+  text-shadow: 4px 2px 4px #242525;
   text-transform: uppercase; }

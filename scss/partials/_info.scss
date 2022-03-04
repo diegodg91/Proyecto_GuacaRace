@@ -2,4 +2,12 @@
     background-color: $gray;
     color: $color-secundario;
   }
+  .info__background{
+    min-height: 420px;
+    background-image: url("../img/recorridos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
   

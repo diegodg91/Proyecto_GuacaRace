@@ -46,6 +46,15 @@
       }
     }
   }
+
+  .recorridos__background{
+    min-height: 420px;
+    background-image: url("../img/trail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
   
   .recorridos__eco {
     background-color: $gray;

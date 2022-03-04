@@ -68,33 +68,56 @@
 
 
     <section class="bg-gray">
-      <div class="row mx-auto container">
-        <div class="col-12 text-center pt-5 pb-5">
-          <h1 class="fc-brand-2 title-l">info</h1>
-        </div>
-      </div>
 
-      <div class="row mx-auto container-fluid bg-white">
+      <div class="row mx-auto container-fluid info__background">
         <div class="col-12 pt-5 pb-5 text-center">
-          <h4 class="text-center fc-brand-2 fw-bold text-uppercase">reglamento de la carrera</h4>
-
-          <button type="button" class="btn btn-dark mt-4 text-uppercase font-monospace" data-bs-toggle="modal"
-            data-bs-target="#miModal">leer reglamento</button>
+          <h1 class="title-l p-3 mb-5">info</h1>
+          <button type="button" class="btn btn-outline-light mt-4 text-uppercase fw-bold font-monospace"
+            data-bs-toggle="modal" data-bs-target="#miModal">leer reglamento</button>
 
           <!-- content modal -->
           <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="fc-brand pt-5 modal-title" id="modalTitle">reglamento</h5>
+                  <h5 class="fc-brand-2 fw-bold text-uppercase pt-5 modal-title" id="modalTitle">reglamento</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                 </div>
                 <div class="modal-body">
-
+                  <ul class="fc-brand-2">
+                    <li>
+                      Según el artículo 34 de la ley 24.240 de Defensa al Consumidor, se podrá solicitar la
+                      devolución de la
+                      inscripción dentro del plazo de 10 días corridos a partir de la fecha de la celebración del
+                      contrato.
+                      Para gestionar la misma deberán contactarse por email a info@guacarace.com.
+                    </li>
+                    <li>
+                      Luego de transcurridos el plazo indicado en el inciso anterior, el pago de la inscripción NO
+                      es reintegrable NI transferible a otra persona en caso de la no participación del corredor,
+                      cualquiera sea el motivo.
+                    </li>
+                    <li>
+                      En los casos que el participante justifique su no participación, cualquiera sea el motivo, y
+                      haya excedido el período de 10, según la fecha de solicitud baja, la Organización podrá reconocer
+                      un
+                      porcentaje de la inscripción para utilizar como descuento en la proxima edicion exclusivamente, a
+                      saber:
+                      <ul>
+                        <li>100% del pago realizado si cancela su participación hasta el 10 agosto 2022</li>
+                        <li>50% del pago realizado, si cancela su participación entre 15 y 20 de agosto 2022.</li>
+                        <li>25% del pago realizado si cancela su participación entre el 21 y el 31 de agosto 2022</li>
+                      </ul>
+                    </li>
+                    <li class="fst-italic fw-bold">
+                      No se reconocerá ningún porcentaje si cancela su participación a partir del 1º de septiembre de
+                      2022
+                    </li>
+                  </ul>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
 
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -103,49 +126,101 @@
       </div>
     </section>
 
-    <!-- Seccion FAQ -->
-    <!-- <section class="info">
-      <div class="row p-4">
-        <h2 class="fw-bold text-uppercase fc-brand">Acreditaciones</h2>
-        <div class="col-12">
-          <p class="text-justify">
-            a) Las acreditaciones se realizarán durante los días 20, 21 y 22 de septiembre 2022 en la ciudad de
-            Corrientes, lugar a confirmar
-          <p>b) Los competidores al momento de acreditarse para retirar su número y kit de corredor, deberán presentar
-            obligatoriamente:
-            1. Documento de identidad original o pasaporte
-            2. Certificado de Apto Médico, fechado dentro de los últimos 60 días anteriores a la realización de la
-            carrera. Donde conste:
-            Nombre, apellido y DNI del corredor y un texto que incluya que el corredor se encuentra apto médica y
-            físicamente para participar en - aclarando expresamente- la distancia en la que participará. Debe tener
-            fecha, firma y sello del médico que lo extiende.</p>
+    <section class="bg-gray">
+      <div class="row  mx-auto container-fluid">
+        <div class="col-12 d-flex flex-column justify-content-center text-justify pt-5 pb-5">
+          <h2 class="fw-bold text-center pb-2 fst-italic text-uppercase fc-brand-2">Acreditaciones</h2>
+          <ul class="fc-brand-2 align-self-center">
+            <li>
+              Las acreditaciones se realizarán durante los días 20, 21 y 22 de septiembre 2022 en la ciudad de
+              Corrientes, lugar a confirmar.
+            </li>
+            <li>
+              Los competidores al momento de acreditarse para retirar su número y kit de corredor, deberán
+              presentar obligatoriamente:
+              <ol>
+                <li>Documento de identidad original o pasaporte</li>
+                <li>Certificado de Apto Médico, fechado dentro de los últimos 60 días anteriores a la
+                  realización de la carrera.</li>
+                <li>Deslinde firmado</li>
+                <li>
+                  Comprobante de pago
+                </li>
+              </ol>
+            <li class="pt-2 pb-2 text-uppercase fw-bold text-muted fst-italic">No se podra retirar kit el dia de la
+              competencia
+            </li>
+            <li>En caso de que un tercero retire el kit, debera presentar:
+              <ol>
+                <li>Fotocopia de DNI del corredor</li>
+                <li>Certificado de apto medico original</li>
+                <li>Deslinde firmado por el corredor</li>
+                <li>Fotocopia o comprobante de pago</li>
+              </ol>
+            </li>
 
-          </p>
+            </li>
+          </ul>
+
         </div>
 
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
+          <h2 class="fw-bold text-center pb-2 fst-italic text-uppercase fc-brand-2">categorias</h2>
+
+          <div class="col-sm-auto col-md-6 bg-brand rounded shadow align-items-center p-4">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-items-center">
+                  <p class="fs-3 fw-bold text-center text-uppercase">Femenino</p>
+                  <ul class="text-center fw-bold fc-light fc-brand-2">
+                    <li>Hasta 19 años</li>
+                    <li>20 - 39 años</li>
+                    <li>30 - 39 años</li>
+                    <li>40 - 49 años</li>
+                    <li>50- 59 años</li>
+                    <li>60 - 65 años</li>
+                    <li>Mas 65 años</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-items-center">
+                  <p class="fs-3 fw-bold text-center text-uppercase">Masculino</p>
+                  <ul class="text-center fw-bold fc-light fc-brand-2">
+                    <li>Hasta 19 años</li>
+                    <li>20 - 39 años</li>
+                    <li>30 - 39 años</li>
+                    <li>40 - 49 años</li>
+                    <li>50- 59 años</li>
+                    <li>60 - 65 años</li>
+                    <li>Mas 65 años</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
 
 
+
+
+
+          </div>
+
+        </div>
       </div>
+
+    </section>
+
+    <!-- Seccion FAQ -->
+    <!-- <section class="info">
+     
 
       <div class="row p-4">
         <h2 class="fw-bold text-uppercase fc-brand">devoluciones</h2>
         <div class="col-12">
           <p class="text-justify">
-            a) Según el artículo 34 de la ley 24.240 de Defensa al Consumidor, se podrá solicitar la devolución de la
-            inscripción dentro del plazo de 10 días corridos a partir de la fecha de la celebración del contrato.
-            Para gestionar la misma deberán contactarse por email a info@guacarace.com.
-          <p>b) Luego de transcurridos el plazo indicado en el inciso anterior, el pago de la inscripción NO es
-            reintegrable NI transferible a otra persona en caso de la no participación del corredor, cualquiera sea el
-            motivo.</p>
-          <p>c) En los casos que el participante justifique su no participación, cualquiera sea el motivo, y haya
-            excedido el período de 10 días al que hace referencia el inciso a) del presente artículo, según la fecha de
-            solicitud baja, la Organización podrá reconocer un porcentaje de la inscripción para utilizar como descuento
-            en la proxima edicion exclusivamente, a saber:
-            100% del pago realizado si cancela su participación hasta el 10 agosto 2022.
-            50% del pago realizado, si cancela su participación entre 15 y 20 de agosto 2022.
-            25% del pago realizado si cancela su participación entre el 21 y el 31 de agosto 2022.</p>
-          <p class="text-uppercase fw-bold">No se reconocerá ningún porcentaje si cancela su participación a partir del
-            1º de septiembre de 2022</p>
+            
 
 
           </p>

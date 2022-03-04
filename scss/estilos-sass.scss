@@ -40,6 +40,9 @@
 .fc-brand-2 {
   color: $color-secundario;
 }
+.fc-light{
+  color: $white;
+}
 
 .gr-button {
   max-width: 14rem;
@@ -81,7 +84,7 @@
   font-size: $title-m;
   font-weight: 800;
   font-style: italic;
-  text-shadow: $shadow;
+  text-shadow: 4px 2px 4px $shadow;
   text-transform: uppercase;
 }
 
@@ -91,10 +94,11 @@
   font-style: italic;
   text-shadow: $shadow;
   text-transform: uppercase;
+  text-shadow: 4px 2px 4px $shadow;
 }
 .title-xl {
   font-size: $title-xl;
   font-weight: bolder;
-  text-shadow: $shadow;
+  text-shadow: 4px 2px 4px $shadow;
   text-transform: uppercase;
 }
