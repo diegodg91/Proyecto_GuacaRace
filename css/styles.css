@@ -201,6 +201,9 @@
 .img-kit > img {
   width: 20rem;
   height: auto; }
+  @media (max-width: 320px) {
+    .img-kit > img {
+      width: 16rem; } }
 
 .form__pre {
   /* background-image: url(../img/ccc2021.jpg); */
