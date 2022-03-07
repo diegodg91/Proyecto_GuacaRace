@@ -1,7 +1,12 @@
 .recorridos {
     background-color: $white;
     color: $color-secundario;
-  
+
+   @include mobile{
+     h2{
+       font-size: 2rem;
+     }
+   }
     .icon-list {
       color: $color-primario;
     }
@@ -48,12 +53,11 @@
   }
 
   .recorridos__background{
-    min-height: 420px;
+    min-height: 80vh;
     background-image: url("../img/trail.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
   }
   
   .recorridos__eco {

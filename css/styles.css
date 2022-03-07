@@ -237,6 +237,9 @@
 .recorridos {
   background-color: #f5f5f5;
   color: #2c394b; }
+  @media (max-width: 320px) {
+    .recorridos h2 {
+      font-size: 2rem; } }
   .recorridos .icon-list {
     color: #ff4c29; }
   .recorridos .icon-list::before {
@@ -274,12 +277,11 @@
         width: 100%; } }
 
 .recorridos__background {
-  min-height: 420px;
+  min-height: 80vh;
   background-image: url("../img/trail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  width: 100%; }
+  background-position: center; }
 
 .recorridos__eco {
   background-color: #e9eaeb;
