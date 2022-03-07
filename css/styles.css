@@ -81,17 +81,17 @@
   overflow: hidden; }
   @media (max-width: 320px) {
     .hero__animation-contenedor {
-      height: 40px;
-      font-size: 40px; } }
+      height: 36px;
+      font-size: 36px; } }
   @media (max-width: 320px) {
     .hero__animation-contenedor {
-      line-height: 40px; } }
+      line-height: 36px; } }
   .hero__animation-contenedor ul {
     list-style: none;
-    padding-left: 10px;
-    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-bottom: 4px;
     margin: 0;
-    animation: animar 10s infinite;
+    animation: animar 7s infinite;
     transition: all 300ms; }
 
 @keyframes animar {
@@ -120,17 +120,17 @@
       20% {
         margin-top: 0; }
       25% {
-        margin-top: -40px; }
+        margin-top: -36px; }
       50% {
-        margin-top: -40px; }
+        margin-top: -36px; }
       55% {
-        margin-top: -80px; }
+        margin-top: -76px; }
       70% {
-        margin-top: -80px; }
+        margin-top: -76px; }
       70% {
-        margin-top: -80px; }
+        margin-top: -76px; }
       95% {
-        margin-top: -40px; }
+        margin-top: -36px; }
       100% {
         margin-top: 0px; } } }
 
