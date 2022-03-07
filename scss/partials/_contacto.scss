@@ -5,6 +5,20 @@
     min-height: 40rem;
     background-color: $white;
     color: $color-secundario;
+
+    .contacto__icons-tel::before{
+      content: "";
+      padding: 0 2rem 1rem 0;
+      background-image: url(/img/phone.svg);
+      background-repeat: no-repeat;
+    }
+
+    .contacto__icons-gps::before{
+      content: "";
+      padding: 0 2rem 1rem 0;
+      background-image: url(/img/gps.svg);
+      background-repeat: no-repeat;
+    }
   
     .contacto__form {
       display: flex;
